@@ -1,0 +1,12 @@
+The CPU information includes details about the processor, like the architecture, vendor name, model, number of cores, a speed of each core etc. 
+There are quite a few commands on Linux to get those details about the CPU hardware, and here is about some of the commands.
+
+/proc/cpuinfo
+lscpu        ## 
+hardinfo     ## displays hardware information in a GTK+ window, you can install it as: apt-get install hardinfo
+lshw         ## hwinfo is used to extract info about the hardware present in a Linux system. To display info about your CPU, use the --cpu
+nproc        ## Print Number of Processing Units
+dmidecode    ## For retrieving hardware information of any Linux system. It dumps a computer’s DMI (a.k.a SMBIOS) table contents in a human-readable format for easy retrieval
+cpuid        ## dumps complete information about the CPU(s) collected from the CPUID instruction, and also discover the exact model of x86 CPU(s) from that information
+inxi         ## To display complete CPU information, including per CPU clock-speed and CPU max speed (if available), use the -C flag
+
