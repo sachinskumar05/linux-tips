@@ -1,0 +1,58 @@
+https://mindmajix.com/linux-networking-commands-best-examples
+
+Linux networking commands are used extensively to inspect, analyze, maintain, and troubleshoot the network/s connected to the system. 
+Let us first know the list of the basic networking commands used in Linux followed by a detailed explanation of each.
+
+ifconfig 
+ip
+traceroute
+tracepath
+ping
+netstat
+ss
+dig
+nslookup
+route
+host
+arp
+iwconfig
+hostname
+curl or wget
+mtr
+whois
+ifplugstatus
+iftop
+tcpdum
+
+--------------------
+Details of Linux Networking Commands
+1. ifconfig
+  Linux ifconfig stands for interface configurator. It is one of the most basic commands used in network inspection. 
+  ifconfig is used to initialize an interface, configure it with an IP address, and enable or disable it. It is also used to display the route and the network interface. 
+  Basic information displayed upon using ifconfig are:
+    IP address
+    MAC address
+    MTU(Maximum Transmission Unit) 
+
+  To get details of specific interface
+    Using this command, you can get details of a specific interface. This is shown below.
+
+    Commands:
+    ifconfig eth0
+    ifconfig lo
+    ifconfig wlan0
+    To assign an IP address and Gateway to an interface
+    This command can also be used to assign an IP address and Gateway to an interface. However, these details will be reset after the system reboot.
+    Syntax: ifconfig eth0 <address> netmask <address>   
+    
+  To enable or disable an interface
+    ifconfig can be used to enable or disable an interface. 
+    Syntax: ifup eth0 
+  To disable an interface
+    Syntax: ifdown eth0 
+  To set the size of MTU
+    By default, MTU has a size of 1500. This can be however set externally by the user using ifconfig.
+    Syntax: Ifconfig eth0 mtu xxxx
+            XXXX can be replaced by the size of your choice.
+  For more details refer : https://mindmajix.com/linux-networking-commands-best-examples 
+  
